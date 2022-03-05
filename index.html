@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+
+    <title>Steam Deck Date Calculator</title>
+</head>
+<body style="width: 100%; height:100%;" class="css-selector">
+    <div id="mainContent">
+        <h1>Steam Deck Date Calculator</h1>
+        <div id="content">
+            <p>Made by u/jordonbc, An adaptation of u/jplayzgamezevrnonsub as a webapp. </p>
+        <p id="warning">THE DATES PROVIDED BY THIS CALCULATOR SHOULD NOT BE EXPECTED TO BE ACCURATE,
+            THIS CALCULATOR WAS MADE AS A FUN GIMMICK, NOT SOMETHING YOU SHOULD BE TAKING AS FACT!</p>
+        
+            <div class="inlinekdiv">
+                <form onsubmit="return false">
+                    <h2>Which Quarter are you?</h2>
+                    <label for="Q1">Quarter 1:</label>
+                    <input type="radio" id="Q1" name="Quarter" value="Q1" required>
+                    <label for="Q2">Quarter 2</label>
+                    <input type="radio" id="Q2" name="Quarter" value="Q2" required>
+                    <label for="Q2+">After quarter 2</label>
+                    <input type="radio" id="Q2+" name="Quarter" value="Q2+" required>
+
+                    <h2>Which regions do you want to include?</h2>
+                    <p style="font-size: 0.8em;">The more regions you include, the more datapoints you will have, however it may lead to other inaccuracies due to the queue being regional.</p>
+                    <label for="Q1">US:</label>
+                    <input type="checkbox" id="RegionUS" name="RegionUS" checked>
+                    <label for="Q1">EU:</label>
+                    <input type="checkbox" id="RegionEU" name="RegionEU" value="true" checked>
+                    <label for="Q1">UK:</label>
+                    <input type="checkbox" id="RegionUK" name="RegionUK" value="true" checked>
+                    <h2>Which model of Deck did you reserve?</h2>
+                    <label for="Q1">64 GB:</label>
+                    <input type="radio" id="64" name="Model" value="64" required>
+                    <label for="Q2">256 GB:</label>
+                    <input type="radio" id="256" name="Model" value="256" required>
+                    <label for="Q2+">512 GB:</label>
+                    <input type="radio" id="512" name="Model" value="512" required>
+
+                    <h2>Reserved Time</h2>
+                    <p style="font-size: 0.8em;">Ok, things get a bit more technical here.</p>
+                    <p style="font-size: 0.8em;">Visit <a href="https://store.steampowered.com/reservation/ajaxgetuserstate?rgReservationPackageIDs=%5B595603,595604,595605%5D" target="_blank">this</a> link, and copy the number after "rtReserveTime"</p>
+                    <p style="font-size: 0.8em;">NOTE: IF THE WEB PAGE IS EITHER BLACK OR JUST SHOWS "SUCCESS:21", YOU ARE NOT SIGNED IN</p>
+                    <p style="font-size: 0.8em;">Come back and past it into the calculator.</p>
+                    <input type="text" id="fname" name="ReservedTime" pattern="[0-9]+" placeholder="e.g: 193533534" required>
+
+                    <br>
+                    <input type="submit" value="Submit" onclick="CalculateResult(this.form)">
+                </form>
+            </div>
+
+            <h2 id="pd">DATE!</h2>
+            <p>Don't worry, these are totally safe to include in a screenshot of your result. It just makes it a lot easier for me to fix something if somebody gets an oddball result.</p>
+        
+        </div>
+    </div>
+
+</body>
+</html>

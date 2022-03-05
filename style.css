@@ -1,0 +1,101 @@
+body {
+    overflow-x: hidden;
+}
+h1 {
+    text-align: center;
+    font-size: 5em;
+    margin: auto;
+    padding-top: 5vh;
+    color: #dfdfdf;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #dfdfdf;
+    font-size: 1.5em;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+#pd {
+    color:chartreuse;
+    font-size: 3em;
+    visibility: hidden;
+}
+
+p {
+    color: #dfdfdf;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Hubballi', cursive;
+}
+
+a {
+    color: #00f2ff;
+}
+
+#warning{
+    color: #e3f300;
+}
+
+div.inlinekdiv {
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+input[type="radio"] {
+    margin-right: 2em;
+  }
+
+input[type="checkbox"] {
+    margin-right: 2em;
+  }
+
+form {
+    text-align: center;
+    color: #dfdfdf;
+    font-size: 1.5em;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+#mainContent {
+    margin: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 75%;
+    background-color: rgb(32, 32, 32);
+    border-radius:30px;
+}
+
+#content {
+    margin: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.css-selector {
+    background: linear-gradient(to bottom right, #e700ff, #990000, #00f2ff);
+    background-size: 600% 600%;
+
+    -webkit-animation: BGGradient 37s ease infinite;
+    -moz-animation: BGGradient 37s ease infinite;
+    animation: BGGradient 37s ease infinite;
+}
+
+@-webkit-keyframes BGGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes BGGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes BGGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
